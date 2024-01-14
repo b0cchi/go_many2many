@@ -22,7 +22,7 @@
 			"extensions": [
 				"golang.Go",
 				"Gruntfuggly.todo-tree",
-				"qwtel.sqlite-viewer"
+				"alexcvzz.vscode-sqlite"
 			]
 		}
 	}
