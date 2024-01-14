@@ -1,0 +1,29 @@
+{
+	"name": "many2many",
+
+    "dockerFile": "Dockerfile",
+	"workspaceFolder": "/go/src",
+	"forwardPorts": [8080],
+	"workspaceMount": "source=${localWorkspaceFolder}/src,target=/go/src,type=bind,consistency=cached",
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"go.toolsManagement.checkForUpdates": "off",
+				"go.gopath": "/go",
+				"go.formatTool": "gofmt",
+				"go.useLanguageServer": true,
+				"editor.formatOnSave": false,
+				"[go]": {
+				  "editor.formatOnSave": true
+				}
+			  },
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"golang.Go",
+				"Gruntfuggly.todo-tree",
+				"qwtel.sqlite-viewer"
+			]
+		}
+	}
+}
